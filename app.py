@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 import sqlite3
 app = Flask(__name__,template_folder='.')
-@app.route('/register',methods=["POST","GET"])
+@app.route('/register/referal_id/5623',methods=["POST","GET"])
 def register():
     if request.method == "POST":
         username = request.form['username']
@@ -41,3 +41,4 @@ def login():
     return render_template("login.html")      
             
           
+
